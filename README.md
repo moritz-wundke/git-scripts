@@ -15,6 +15,8 @@ Remove all untracked files and directories:
 
     git clean -f -d
 
+more on git clean: http://git-scm.com/docs/git-clean
+
 ## Submodules ###
 
 Work In Progress
