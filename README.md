@@ -26,6 +26,22 @@ Sometimes you may push a bad merge, in such cases going back in time to cleanup 
     git reset --hard <commit>
     git push --force
 
+## Merge with theirs
+
+    git merge test-development
+    # Automatic merge failed, a bunch of conflicts!
+    git checkout --theirs .
+    git add .
+    git commit
+
+or 
+
+    git merge -X theirs branchB
+
+the second command might complain about some deleted files, to to fix that you do
+
+    git rm {DELETED-FILE-NAME}
+
 ## Submodules
 
 Work In Progress
